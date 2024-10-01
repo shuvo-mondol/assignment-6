@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind-project-2</title>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        #banner{
+            background-image:url(photo/banner.png);
+            background-repeat: no-repeat;
+            background-size:cover;
+            
+            
+            
+        }
+
+        #card{
+            background-image: url(photo/Rectangle\ 32.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #card{
+            background-image: url(photo/decoration.png);
+            background-repeat: no-repeat;
+            background-size: 250px;
+            background-position: 93% 355px;
+        }
+
+        #card2{
+            background-image: url(photo/decoration.png);
+            background-repeat: no-repeat;
+            background-position: 8% 200px;
+        }
+
+        
+    </style>
+
+
+</head>
+<body class="bg-slate-50">
+    <section class="bg-white">
+        <nav class="borde-l border-l-red-700 border-l-8">
+            <div class="flex items-center justify-between md:px-16 md:py-2 px-3 py-1 md:bg-white bg-pink-200">
+                <img src="photo/c4u full logo_2022 1 (1).jpg" alt="" class="h-6 md:h-12 rounded">
+
+                <div>
+                    <div class="hamburger space-y-2 cursor-pointer md:hidden " onclick="toggleMenu()">
+                        <span id="line1" class="block w-8 h-1 bg-gray-800 transition-transform "></span>
+                        <span id="line2" class="block w-8 h-1 bg-gray-800 transition-transform"></span>
+                        <span id="line3" class="block w-8 h-1 bg-gray-800 transition-transform"></span>
+                    </div>
+                    
+                    <!-- Navigation Menu -->
+                    <nav id="menu" class="hidden flex-col items-center mt-4 space-y-4 md:flex md:flex-row md:space-x-6 ">
+                        <ul class="flex flex-col space-y-4 md:flex-row md:space-x-6 md:space-y-0">
+                            <li><a href="#" class="text-gray-800">Home</a></li>
+                            <li><a href="#" class="text-red-600 ">About Us</a></li>
+                            <li><a href="#" class="text-gray-800">Upskill</a></li>
+                            <li><a href="#" class="text-gray-800">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <button class="bg-[#F44335] md:px-2 md:py-2 rounded-lg md:text-xl text-[8px] py-1 px-1 hover">Register interest</button>
+            </div>
+        </nav>
+    </section>
+
+
+<!--section 0ne-->
+<section>
+    <section class="borde-l border-l-red-700 border-l-8" id="banner">
+        <div class="">
+            
+
+            <div class="flex flex-col md:gap-8 items-center md:pt-28 md:pb-[202px] gap-3  pt-2 pb-2">
+                <div >
+                    <p class="md:text-xl font-bold text-[8px] text-white">Discover<span class="text-red-600">-</span>Interest<span class="text-red-600">-</span>Engage</p>
+                </div>
+
+                <div>
+                    <h2 class="md:text-6xl font-bold text-white text-xs">Connecting <span class="text-red-600 underline">talent</span> to <br> opportunity through <span class="text-red-600">skills</span> </h2>
+                </div>
+                <p class="text-slate-300 md:text-base text-[8px]">
+                    We forster a skill-focussed environment enabling students to navigate their career with <br> their self-paced learning journey and businesses to gain market-ready talent. 
+                </p>
+
+                <button class="text-red-500 bg-white md:px-4 md:py-2 rounded-full md:text-base text-[8px] px-1 py-1 hover">
+                    Ask questions
+                </button>
+
+                
+            </div>
+        </div>
+    </section>
+    <div class="md:ms-2 ms-[10px]">
+        <img src="photo/wave.jpg.png" alt="" class="w-screen">
+    </div>
+</section>
+
+
+<!--Section tow-->
+<section>
+    <div class="flex md:px-48 md:gap-48 items-center px-2 gap-3">
+        <div>
+            <h2 class="md:text-4xl font-bold text-[14px]">At <span class="text-red-600 underline">C4U</span>, <br>
+                We Empower: </h2>
+        </div>
+
+       <div class="flex md:gap-14 gap-1">
+
+
+         <div class="container flex flex-col bg-[#2D3142] md:px-6 md:py-10 rounded-lg md:gap-6 px-2 gap-2 py-2 hover">
+            <img src="photo/37.jpg" alt="" class="md:size-14 rounded-full size-6 hover">
+            <h2 class="text-white md:text-xl font-bold text-[10px]">Students </h2>
+            <p class="text-white md:text-xl text-[8px]">We help students find their way in a fast-evolving world by creating a personalised learning journey guaranteed to help stand out in a crowded job market. 
+            </p>
+         </div>
+
+        
+         <div class="container flex flex-col bg-[#2D3142] md:px-6 md:py-10 rounded-lg md:gap-6 px-2 py-2 gap-2 hover">
+            <img src="photo/50.jpg" alt="" class="md:size-14 rounded-full size-6 hover">
+            <h2 class="text-white md:text-xl font-bold text-[10px]">Universities </h2>
+            <p class="text-white md:text-xl text-[8px]">We help your emerging talent to unlock their full potential by combining education and work to create future-ready employees
+            </p>
+         </div>
+
+         <div class="container flex flex-col bg-[#2D3142] md:px-6 md:py-10 rounded-lg md:gap-6 px-2 py-2 gap-2 hover">
+            <img src="photo/16.jpg" alt="" class="md:size-14 rounded-full size-6 hover">
+            <h2 class="text-white font-bold md:text-xl text-[10px]">Businesses</h2>
+            <p class="text-white md:text-xl text-[8px]">We enable businesses to tap into the diverse pool of emerging talent cultivated by universities. To co-create the future workforce and revitalise the business world.
+
+            </p>
+         </div>
+       </div>
+    </div>
+</section>
+
+
+
+<!--Section three-->
+ <section class="flex justify-between md:pt-4 md:px-44 pt-2 px-2">
+     <section>
+        <div class="flex flex-col md:gap-40 md:pt-36 gap-12">
+          <div class="flex flex-col md:gap-24 gap-6">
+             <div class="flex flex-col md:gap-4 gap-1.5">
+                 <p class="text-red-500  md:text-2xl text-[7px]">About us</p>
+                 <h2 class="md:text-5xl text-[12px]">Our Mission</h2>
+                 <p class="md:text-xl text-[7px]">To create a personalised  pathway for continuous <br> learning and transferrable skills development.</p>
+             </div>
+             <button class="flex md:gap-2 items-center outline outline-1 md:px-4 md:py-2 outline-red-500 rounded-full md:w-40 w-14 hover">
+                 <p class="text-red-500 font-semibold md:text-base text-[7px] hover">Find out more</p>
+                 <img src="photo/Icon.jpg" alt="" class="md:size-3 size-1.5 ">
+             </button>
+          </div>
+     
+          <img src="photo/Right.jpg" alt="" class="md:size-96 rounded-lg hover">
+        </div>
+      </section>
+
+      <img src="photo/line.jpg" alt="" class="md:h-[1000px] md:pt-40 pt-6 h-[380px]" >
+
+      <section class="flex flex-col md:gap-40 gap-12 pl-3">
+         <img src="photo/Group 238902.jpg" alt="" class="md:size-96 md:pt-16 pt-2 hover">
+
+         <div class="flex flex-col md:gap-24 gap-6">
+            <div class="flex flex-col md:gap-4 gap-2">
+                <p class="text-red-500  md:text-2xl md:text-base text-[7px]">About us</p>
+                <h2 class="md:text-5xl text-[12px]">Our Vision</h2>
+                <p class="md:text-xl text-[7px]">To have a globally recognised strategic bridge <br> between education and the job market</p>
+            </div>
+            <button class="flex md:gap-2 items-center outline md:px-4 md:py-2 outline-red-500 outline-1 rounded-full md:w-40 w-14 hover">
+                <p class="text-red-500 font-semibold md:text-base text-[7px] hover">Contact more</p>
+                <img src="photo/Icon.jpg" alt="" class="md:size-3 size-1.5">
+            </button>
+         </div>
+      </section>
+ </section>
+ <div class="bg-white">
+    <div class="md:ml-[947px] ml-[196px] ">
+        <img src="photo/line1.jpg" alt="" class="md:h-[200px] h-[90px]">
+     </div>
+ </div>
+
+ <div class="bg-white">
+    <img src="photo/pic2.jpg" alt="" class="md:px-40 px-4 pb-4 md:pb-24 w-full">
+ </div>
+
+
+ <!--Section four-->
+ <section id="card">
+    <div class="flex md:gap-24 md:pt-48 md:pl-60 gap-4 pt-4 pl-4">
+        <h2 class="md:text-5xl font-bold text-xs">The Creative Team <br> behind <span class="text-red-600"> the door</span></h2>
+        <img src="photo/Vector.jpg" alt="" class="rounded-lg md:size-32 md:mt-12 size-12 mt-4">
+    </div>
+
+    <div class="flex justify-between md:px-44 md:py-12 px-3 py-1 gap-1" id="card2">
+        <div class="flex flex-col bg-white rounded-lg md:px-16 md:py-10 md:gap-4 gap-2 justify-center px-2 py-2 hover">
+            <img src="photo/image 3.jpg" alt="" class="md:size-32 rounded-full size-14">
+            <div class="flex flex-col justify-center">
+                <span class="md:text-2xl font-bold text-[8px]">Ekta Mahajan</span>
+                <span class="md:text-base text-slate-600 text-[6px]">Founder & C.E.O</span>
+            </div>
+            <img src="photo/calls.jpg" alt="" class="md:w-28 rounded w-10">
+        </div>
+
+
+        <div class="flex flex-col bg-white rounded-lg md:px-16 md:py-10 md:gap-4 gap-2 justify-centerpx-2 py-2 hover">
+            <img src="photo/image 4.jpg" alt="" class="md:size-32 rounded-full size-14">
+            <div class="flex flex-col justify-center">
+                <span class="md:text-2xl font-bold text-[8px]">Toby Potter-Drake</span>
+                <span class="md:text-base text-slate-600 text-[6px]">Product Manager Associate</span>
+            </div>
+            <img src="photo/calls.jpg" alt="" class="md:w-28 rounded w-10">
+        </div>
+
+
+        <div class="flex flex-col bg-white rounded-lg md:px-16 md:py-10 md:gap-4 gap-2 justify-centerpx-2 py-2 hover">
+            <img src="photo/image 2.jpg" alt="" class="md:size-32 rounded-full size-14">
+            <div class="flex flex-col justify-center">
+                <span class="md:text-2xl font-bold text-[8px]">Ross Davies</span>
+                <span class="md:text-base text-slate-600 text-[6px]">Corporate Growth Associate</span>
+            </div>
+            <img src="photo/calls.jpg" alt="" class="md:w-28 rounded w-10">
+        </div>
+
+
+        <div class="flex flex-col bg-white rounded-lg md:px-16 md:py-10 md:gap-4 gap-2 justify-centerpx-2 py-2 hover">
+            <img src="photo/image 1.jpg" alt="" class="md:size-32 rounded-full size-14">
+            <div class="flex flex-col justify-center">
+                <span class="md:text-2xl font-bold text-[8px]">Leo crozier </span>
+                <span class="md:text-base text-slate-600 text-[6px]">Software</span>
+            </div>
+            <img src="photo/calls.jpg" alt="" class="md:w-28 rounded w-10">
+        </div>
+    </div>
+ </section>
+
+
+
+ <!--section five-->
+ <section class="border-b">
+    <div class="flex justify-between md:px-52 px-16 py-2 md:py-8">
+        <div class="flex flex-col justify-center md:gap-3 gap-1">
+            <img src="photo/c4u full logo_2022 1 (1).jpg" alt="" class="md:w-36 w-10 rounded-lg">
+            <ul class="flex flex-col md:text-base text-[5px]">
+                <li class="white">Level 39</li>
+                <li class="white">One Canada Square</li>
+                <li class="white">Canary Wharf</li>
+                <li class="white">London</li>
+                <li class="white">E145AB</li>
+            </ul>
+        </div>
+
+        <div class="flex md:gap-52 gap-5">
+            <div>
+                <ul class="flex flex-col md:gap-4 gap-1 text-[5px] md:text-base">
+                    <li class=" font-bold white">Home</li>
+                    <li class="white">Collaborations</li>
+                    <li class="white">Statistics</li>
+                    <li class="white">How It Works</li>
+                    <li class="white">Testimonials</li>
+                </ul>
+
+            </div>
+
+            <div>
+                <ul class="flex flex-col md:gap-4 gap-1 text-[5px] md:text-base">
+                    <li class=" font-bold white">About Us</li>
+                    <li class="white">Who We Are</li>
+                    <li class="white">Mission statement </li>
+                    <li class="white">Our Vision </li>
+                    <li class="white">The  Team </li>
+                </ul>
+
+            </div>
+
+            <div>
+                <ul class="flex flex-col md:gap-4 gap-1 text-[5px] md:text-base">
+                    <li class=" font-bold white">Upskill</li>
+                    <li class="white">It Support </li>
+                    <li class="white">Project Managment </li>
+                    <li class="white">Data Analysts</li>
+                    <li class="white">Ux Design</li>
+                </ul>
+
+            </div>
+
+            <div>
+                <ul class="flex flex-col md:gap-4 gap-1 text-[5px] md:text-base">
+                    <li class=" font-bold white">Contact Us </li>
+                    <li class="white">Your message </li>
+                    <li class="white">Email </li>
+                    <li class="white">Phone number </li>
+                    <li class="white">Linkedin </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <p class="text-[6px] text-center pb-2 md:text-xs md:pb-4 md:pt-4 pt-2 white">Copyright 2022 Creatives For You LTD</p>
+</footer>
+
+
+<script>
+    function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const line3 = document.getElementById('line3');
+
+    menu.classList.toggle('hidden');
+    
+   
+    line1.classList.toggle('rotate-45');
+    line1.classList.toggle('translate-y-2');
+    line2.classList.toggle('opacity-0');
+    line3.classList.toggle('-rotate-45');
+    line3.classList.toggle('-translate-y-2');
+}
+</script>
+</body>
+</html>
